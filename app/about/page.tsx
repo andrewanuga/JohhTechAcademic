@@ -16,10 +16,10 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "5rem 1.5rem 4rem", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: "50%", right: "-10%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(245,197,24,.05) 0%, transparent 65%)", pointerEvents: "none", transform: "translateY(-50%)" }} />
+        <div style={{ position: "absolute", top: "50%", right: "-10%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, var(--accent2) 0%, transparent 65%)", pointerEvents: "none", transform: "translateY(-50%)" }} />
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }} className="two-col">
           <div>
-            <Badge style={{ marginBottom: "1.25rem" }}>ABOUT US</Badge>
+            <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>ABOUT US</Badge>
             <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,5vw,3.2rem)", fontWeight: 800, lineHeight: 1.12, marginBottom: "1.25rem" }}>
               We Build <span style={{ color: "var(--accent)" }}>Intelligent Learners</span>, Not Just Exam-Passers
             </h1>
@@ -30,7 +30,7 @@ export default function AboutPage() {
               We are an online learning platform that helps Nigerian students understand and apply science, build effective study habits, and prepare strategically for JAMB, WAEC, NECO and other major exams.
             </p>
           </div>
-          <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)" }}>
+          <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid var(--accent2)" }}>
             <Image src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=80" alt="Johntech Academy team" width={700} height={450} style={{ objectFit: "cover", width: "100%", height: 400, display: "block" }} />
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
       <section style={{ maxWidth: 1200, margin: "0 auto", padding: "5rem 1.5rem" }}>
         <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: "3rem", alignItems: "center", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 20, padding: "3rem" }} className="founder-grid">
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: ".75rem" }}>
-            <div style={{ width: 120, height: 120, borderRadius: "50%", background: "rgba(245,197,24,.1)", border: "3px solid rgba(245,197,24,.3)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display',serif", fontWeight: 800, color: "var(--accent)", fontSize: "3rem" }}>
+            <div style={{ width: 120, height: 120, borderRadius: "50%", background: "rgba(245,197,24,.1)", marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display',serif", fontWeight: 800, fontSize: "3rem" }}>
               S
             </div>
             <div style={{ textAlign: "center" }}>
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div>
-            <Badge style={{ marginBottom: "1rem" }}>MEET THE FOUNDER</Badge>
+            <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>MEET THE FOUNDER</Badge>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.5rem,3vw,2rem)", fontWeight: 800, marginBottom: "1rem" }}>
               Why Samari Started <span style={{ color: "var(--accent)" }}>Johntech Academy</span>
             </h2>
@@ -70,14 +70,14 @@ export default function AboutPage() {
       <section style={{ background: "var(--surface)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-            <Badge style={{ marginBottom: "1rem" }}>OUR PURPOSE</Badge>
+            <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>OUR PURPOSE</Badge>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.8rem,4vw,2.6rem)", fontWeight: 800 }}>
               Mission & <span style={{ color: "var(--accent)" }}>Vision</span>
             </h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }} className="two-col">
             <GlowCard style={{ background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: 16, padding: "2.5rem" }}>
-              <div style={{ width: 48, height: 48, background: "rgba(245,197,24,.1)", border: "1px solid rgba(245,197,24,.2)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", marginBottom: "1.25rem" }}>
+              <div style={{ width: 48, height: 48, marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <Target size={22} />
               </div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", fontWeight: 800, marginBottom: ".75rem" }}>Our Mission</h3>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               </p>
             </GlowCard>
             <GlowCard style={{ background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: 16, padding: "2.5rem" }}>
-              <div style={{ width: 48, height: 48, background: "rgba(232,131,74,.1)", border: "1px solid rgba(232,131,74,.2)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent2)", marginBottom: "1.25rem" }}>
+              <div style={{ width: 48, height: 48, marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <Star size={22} />
               </div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", fontWeight: 800, marginBottom: ".75rem" }}>Our Vision</h3>
@@ -101,7 +101,7 @@ export default function AboutPage() {
       {/* What we offer */}
       <section style={{ maxWidth: 1200, margin: "0 auto", padding: "5rem 1.5rem" }}>
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <Badge style={{ marginBottom: "1rem" }}>OUR PROGRAMS</Badge>
+          <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>OUR PROGRAMS</Badge>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.8rem,4vw,2.6rem)", fontWeight: 800 }}>
             How We <span style={{ color: "var(--accent)" }}>Help You</span>
           </h2>
@@ -116,7 +116,7 @@ export default function AboutPage() {
             { Icon: Users,    title: "1-on-1 Consultation", desc: "We identify your specific problems and fix them with clear, personalised strategies. Because every student is different." },
           ].map(({ Icon, title, desc }) => (
             <GlowCard key={title} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 14, padding: "1.65rem" }}>
-              <div style={{ width: 44, height: 44, background: "rgba(245,197,24,.09)", border: "1px solid rgba(245,197,24,.18)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", marginBottom: "1rem" }}>
+              <div style={{ width: 44, height: 44, marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <Icon size={20} />
               </div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", fontWeight: 700, marginBottom: ".4rem" }}>{title}</h3>
@@ -129,7 +129,7 @@ export default function AboutPage() {
       {/* Philosophy */}
       <section style={{ background: "var(--surface)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
-          <Badge style={{ marginBottom: "1.25rem" }}>THE DIFFERENCE</Badge>
+          <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>THE DIFFERENCE</Badge>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.8rem,4vw,2.6rem)", fontWeight: 800, marginBottom: "1.5rem" }}>
             Understanding Over <span style={{ color: "var(--accent)" }}>Cramming</span>
           </h2>
@@ -140,7 +140,7 @@ export default function AboutPage() {
               <p style={{ color: "var(--muted)", fontSize: ".84rem", lineHeight: 1.65 }}>You forget easily. You freeze in the exam. You cannot apply what you &ldquo;learned&rdquo;. You fail.</p>
             </GlowCard>
             <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>→</div>
-            <GlowCard style={{ background: "var(--surface2)", border: "1px solid rgba(245,197,24,.2)", borderRadius: 14, padding: "1.5rem" }}>
+            <GlowCard style={{ background: "var(--surface2)", border: "1px solid var(--accent2)", borderRadius: 14, padding: "1.5rem" }}>
               <div style={{ fontSize: "1.5rem", marginBottom: ".5rem" }}>✅</div>
               <h4 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 700, marginBottom: ".5rem", color: "var(--accent)" }}>Understanding</h4>
               <p style={{ color: "var(--muted)", fontSize: ".84rem", lineHeight: 1.65 }}>You remember naturally. You apply confidently. You excel — in exams and in life.</p>

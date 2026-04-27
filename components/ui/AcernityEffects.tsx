@@ -13,7 +13,7 @@ export function SpotlightBg({ children }: { children: React.ReactNode }) {
       const rect = el.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      spot.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgba(245,197,24,0.07), transparent 60%)`;
+      spot.style.background = `radial-gradient(600px circle at ${x}px ${y}px, var(--accent2), transparent 60%)`;
     };
     el.addEventListener("mousemove", move);
     return () => el.removeEventListener("mousemove", move);
@@ -57,7 +57,7 @@ export function GlowCard({ children, style }: { children: React.ReactNode; style
           position: absolute;
           inset: -1px;
           border-radius: inherit;
-          background: radial-gradient(200px circle at var(--gx,50%) var(--gy,50%), rgba(245,197,24,0.18), transparent 70%);
+          background: radial-gradient(200px circle at var(--gx,50%) var(--gy,50%), var(--accent2), transparent 70%);
           opacity: 0;
           transition: opacity .3s;
           pointer-events: none;

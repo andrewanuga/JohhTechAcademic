@@ -9,7 +9,7 @@ export function PostCard({ post }: { post: Post }) {
     <Link href={`/blog/${post.slug}`} style={{ textDecoration: "none", display: "flex", height: "100%" }}>
       <article
         style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 14, overflow: "hidden", transition: "all .3s", display: "flex", flexDirection: "column", width: "100%", cursor: "pointer" }}
-        onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--accent)"; e.currentTarget.style.transform = "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 16px 48px rgba(245,197,24,.07)"; }}
+        onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--accent)"; e.currentTarget.style.transform = "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 16px 48px var(--accent2)"; }}
         onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
       >
         <div style={{ position: "relative", height: 210, overflow: "hidden", flexShrink: 0 }}>
@@ -22,7 +22,7 @@ export function PostCard({ post }: { post: Post }) {
         <div style={{ padding: "1.35rem", display: "flex", flexDirection: "column", flex: 1 }}>
           <div style={{ display: "flex", gap: ".4rem", flexWrap: "wrap", marginBottom: ".75rem" }}>
             {post.category.slice(0, 2).map(c => (
-              <span key={c} style={{ background: "rgba(245,197,24,.08)", color: "var(--accent)", border: "1px solid rgba(245,197,24,.2)", padding: ".12rem .6rem", borderRadius: 20, fontSize: ".7rem", fontWeight: 600, fontFamily: "'JetBrains Mono',monospace" }}>
+              <span key={c} style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", borderRadius: 20, fontSize: ".7rem", fontWeight: 600, fontFamily: "'JetBrains Mono',monospace" }}>
                 {c}
               </span>
             ))}
@@ -54,7 +54,7 @@ export function FeaturedPostCard({ post }: { post: Post }) {
       <article
         className="featured-card"
         style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 16, overflow: "hidden", display: "grid", gridTemplateColumns: "1fr 1fr", transition: "all .3s", cursor: "pointer" }}
-        onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--accent)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 20px 60px rgba(245,197,24,.08)"; }}
+        onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--accent)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 20px 60px var(--accent2)"; }}
         onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
       >
         <div style={{ position: "relative", minHeight: 360, overflow: "hidden" }}>
@@ -67,7 +67,7 @@ export function FeaturedPostCard({ post }: { post: Post }) {
         <div style={{ padding: "2.5rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <div style={{ display: "flex", gap: ".4rem", flexWrap: "wrap", marginBottom: "1rem" }}>
             {post.category.map(c => (
-              <span key={c} style={{ background: "rgba(245,197,24,.08)", color: "var(--accent)", border: "1px solid rgba(245,197,24,.2)", padding: ".15rem .65rem", borderRadius: 20, fontSize: ".7rem", fontWeight: 600, fontFamily: "'JetBrains Mono',monospace" }}>
+              <span key={c} style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", borderRadius: 20, fontSize: ".7rem", fontWeight: 600, fontFamily: "'JetBrains Mono',monospace" }}>
                 {c}
               </span>
             ))}

@@ -21,10 +21,10 @@ export default function RegisterPage() {
     <div style={{ paddingTop: 64, minHeight: "100vh" }}>
 
       {/* Header */}
-      <section style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "4rem 1.5rem 3rem", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "var(--accent2)", borderBottom: "1px solid var(--border)", padding: "4rem 1.5rem 3rem", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 600, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,197,24,.05) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ position: "relative" }}>
-          <Badge style={{ marginBottom: "1.25rem" }}>GET STARTED</Badge>
+          <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>GET STARTED</Badge>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 800, marginBottom: ".8rem" }}>
             Join <span style={{ color: "var(--accent)" }}>Johntech Academy</span>
           </h1>

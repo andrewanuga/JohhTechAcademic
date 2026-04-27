@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: { default: "Johntech Academy", template: "%s | Johntech Academy" },
   description: "Helping Nigerian students understand science, build study habits, and ace JAMB, WAEC & NECO.",
   keywords: ["JAMB", "WAEC", "NECO", "study tips", "science", "Nigeria", "exam prep", "Johntech Academy"],
+  favicon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

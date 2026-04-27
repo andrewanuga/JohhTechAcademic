@@ -25,9 +25,9 @@ export default function ContactPage() {
 
       {/* Header */}
       <section style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "4.5rem 1.5rem 3.5rem", textAlign: "center", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 600, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,197,24,.04) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 600, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse, var(--accent2) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ position: "relative" }}>
-          <Badge style={{ marginBottom: "1.25rem" }}>GET IN TOUCH</Badge>
+          <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>GET IN TOUCH</Badge>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,5vw,3.2rem)", fontWeight: 800, marginBottom: ".85rem" }}>
             Contact <span style={{ color: "var(--accent)" }}>Johntech Academy</span>
           </h1>
@@ -47,7 +47,7 @@ export default function ContactPage() {
             { Icon: Phone,         title: "Social Media",  val: "@JohntechAcademy",           sub: "Follow for daily study tips" },
           ].map(({ Icon, title, val, sub }) => (
             <GlowCard key={title} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 14, padding: "1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
-              <div style={{ width: 42, height: 42, background: "rgba(245,197,24,.09)", border: "1px solid rgba(245,197,24,.18)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", flexShrink: 0 }}>
+              <div style={{ width: 42, height: 42, marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                 <Icon size={19} />
               </div>
               <div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </GlowCard>
           ))}
 
-          <GlowCard style={{ background: "linear-gradient(135deg,var(--surface) 0%,#1a1600 100%)", border: "1px solid rgba(245,197,24,.2)", borderRadius: 14, padding: "1.75rem" }}>
+          <GlowCard style={{ background: "linear-gradient(135deg,var(--surface) 0%,var(--accent2) 100%)", border: "1px solid var(--accent2)", borderRadius: 14, padding: "1.75rem" }}>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 800, fontSize: "1.1rem", marginBottom: ".6rem" }}>
               Ready to join? <span style={{ color: "var(--accent)" }}>Register now.</span>
             </h3>

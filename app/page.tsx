@@ -22,7 +22,7 @@ export default function HomePage() {
 
           <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4.5rem", alignItems: "center" }} className="hero-grid">
             <div className="anim-up">
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(245,197,24,.07)", border: "1px solid rgba(245,197,24,.22)", borderRadius: 99, padding: ".3rem 1rem", marginBottom: "1.75rem" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "var(--accent2)", border: "1px solid var(--accent)", borderRadius: 99, padding: ".3rem 1rem", marginBottom: "1.75rem" }}>
                 <Star size={12} color="var(--accent)" fill="var(--accent)" />
                 <span style={{ color: "var(--accent)", fontSize: ".75rem", fontWeight: 700, fontFamily: "'JetBrains Mono',monospace", letterSpacing: ".06em" }}>
                   NIGERIA&apos;S SMART LEARNING PLATFORM
@@ -78,13 +78,13 @@ export default function HomePage() {
       {/* SERVICES */}
       <section style={{ maxWidth: 1200, margin: "0 auto", padding: "5rem 1.5rem" }}>
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-          <Badge style={{ marginBottom: "1rem" }}>WHAT WE OFFER</Badge>
+          <Badge style={{ marginBottom: "1rem", padding: "0.5rem 1rem", backgroundColor: "var(--accent2)", border: "1px solid var(--accent)", color: "var(--text)" }}>WHAT WE OFFER</Badge>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,4vw,2.8rem)", fontWeight: 800, marginBottom: ".75rem" }}>
             Everything You Need to <span style={{ color: "var(--accent)" }}>Excel</span>
           </h2>
           <p style={{ color: "var(--muted)", maxWidth: 520, margin: "0 auto", fontSize: ".98rem" }}>From confused student to confident exam-passer — we have a programme for you.</p>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: "1.25rem" }}>
+        <div style={{ display: "grid",  gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: "1.25rem" }}>
           {[
             { Icon: BookOpen, title: "Online Courses",    desc: "Self-paced, structured lessons in Physics, Chemistry, Maths and more." },
             { Icon: Users,    title: "1-on-1 Coaching",   desc: "Personalised academic coaching and study-habit improvement." },
@@ -94,7 +94,7 @@ export default function HomePage() {
             { Icon: Star,     title: "Study Materials",    desc: "High-quality guides, structured notes and performance-boosting resources." },
           ].map(({ Icon, title, desc }) => (
             <GlowCard key={title} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 14, padding: "1.65rem", transition: "all .3s" }}>
-              <div style={{ width: 44, height: 44, background: "rgba(245,197,24,.09)", border: "1px solid rgba(245,197,24,.18)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", marginBottom: "1rem" }}>
+              <div style={{ width: 44, padding: "0.5rem 0.5rem", backgroundColor: "var(--accent2)", border: "1px solid var(--accent)", color: "var(--text)", height: 44, background: "var(--accent2)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1rem" }}>
                 <Icon size={21} />
               </div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.05rem", fontWeight: 700, marginBottom: ".45rem" }}>{title}</h3>
@@ -108,7 +108,7 @@ export default function HomePage() {
       <section style={{ background: "var(--surface)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4.5rem", alignItems: "center" }} className="two-col">
           <div>
-            <Badge style={{ marginBottom: "1.2rem" }}>OUR PHILOSOPHY</Badge>
+            <Badge className="px-4 py-2" style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>OUR PHILOSOPHY</Badge>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,4vw,2.6rem)", fontWeight: 800, lineHeight: 1.18, marginBottom: "1.1rem" }}>
               Understanding Over <span style={{ color: "var(--accent)" }}>Cramming</span>
             </h2>
@@ -141,12 +141,12 @@ export default function HomePage() {
       <section style={{ maxWidth: 1200, margin: "0 auto", padding: "5.5rem 1.5rem" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "2.5rem", flexWrap: "wrap", gap: "1rem" }}>
           <div>
-            <Badge style={{ marginBottom: ".75rem" }}>KNOWLEDGE HUB</Badge>
+            <Badge className="px-4 py-2" style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>KNOWLEDGE HUB</Badge>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.7rem,3.5vw,2.4rem)", fontWeight: 800 }}>
               Latest from the <span style={{ color: "var(--accent)" }}>Blog</span>
             </h2>
           </div>
-          <Link href="/blog" style={{ display: "flex", alignItems: "center", gap: 6, color: "var(--accent)", textDecoration: "none", fontWeight: 600, fontSize: ".88rem", border: "1px solid rgba(245,197,24,.25)", padding: ".5rem 1.1rem", borderRadius: 8 }}>
+          <Link href="/blog" style={{ display: "flex", alignItems: "center", gap: 6, color: "var(--accent)", border: "1px solid var(--accent)", textDecoration: "none", fontWeight: 600, fontSize: ".88rem", padding: ".5rem 1.1rem", borderRadius: 8 }}>
             View all posts <ArrowRight size={14} />
           </Link>
         </div>
@@ -160,7 +160,7 @@ export default function HomePage() {
       <section style={{ background: "var(--surface)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-            <Badge style={{ marginBottom: "1rem" }}>STUDENT WINS</Badge>
+            <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>STUDENT WINS</Badge>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.8rem,4vw,2.5rem)", fontWeight: 800 }}>
               What Our <span style={{ color: "var(--accent)" }}>Students Say</span>
             </h2>
@@ -177,7 +177,7 @@ export default function HomePage() {
                 </div>
                 <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.72, marginBottom: "1.25rem", fontStyle: "italic" }}>&ldquo;{t.text}&rdquo;</p>
                 <div style={{ display: "flex", alignItems: "center", gap: ".75rem", borderTop: "1px solid var(--border)", paddingTop: "1rem" }}>
-                  <div style={{ width: 38, height: 38, borderRadius: "50%", background: "rgba(245,197,24,.12)", border: "1px solid rgba(245,197,24,.2)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display',serif", fontWeight: 700, color: "var(--accent)", fontSize: ".9rem", flexShrink: 0 }}>
+                  <div style={{ width: 38, height: 38, borderRadius: "50%", background: "rgba(245,197,24,.12)", marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display',serif", fontWeight: 700, fontSize: ".9rem", flexShrink: 0 }}>
                     {t.name[0]}
                   </div>
                   <div>
@@ -195,9 +195,9 @@ export default function HomePage() {
       <section style={{ padding: "6rem 1.5rem" }}>
         <div style={{ maxWidth: 780, margin: "0 auto", textAlign: "center" }}>
           <MovingBorder style={{ borderRadius: 20, display: "inline-block", width: "100%" }}>
-            <div style={{ background: "linear-gradient(135deg,var(--surface) 0%,#1a1600 100%)", border: "1px solid var(--border)", borderRadius: 20, padding: "4rem 2.5rem", position: "relative", overflow: "hidden" }}>
-              <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 250, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,197,24,.06) 0%, transparent 70%)", pointerEvents: "none" }} />
-              <Badge style={{ marginBottom: "1.5rem" }}>JOIN THE ACADEMY</Badge>
+            <div style={{ background: "linear-gradient(135deg,var(--surface) 0%,var(--accent2) 100%)", border: "1px solid var(--border)", borderRadius: 20, padding: "4rem 2.5rem", position: "relative", overflow: "hidden" }}>
+              <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 250, borderRadius: "50%", background: "radial-gradient(ellipse, var(--accent2) 0%, transparent 70%)", pointerEvents: "none" }} />
+              <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>JOIN THE ACADEMY</Badge>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,4vw,3rem)", fontWeight: 800, lineHeight: 1.12, marginBottom: "1rem", position: "relative" }}>
                 Ready to <span style={{ color: "var(--accent)" }}>Crush Your Exams?</span>
               </h2>

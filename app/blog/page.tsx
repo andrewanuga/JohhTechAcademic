@@ -22,9 +22,9 @@ export default function BlogPage() {
 
       {/* Header */}
       <section style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "4.5rem 1.5rem 3.5rem", textAlign: "center", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 700, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,197,24,.04) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 700, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse, var(--accent2) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ position: "relative" }}>
-          <Badge style={{ marginBottom: "1.25rem" }}>KNOWLEDGE HUB</Badge>
+          <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>KNOWLEDGE HUB</Badge>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2.2rem,5vw,3.4rem)", fontWeight: 800, marginBottom: ".85rem" }}>
             The Johntech <span style={{ color: "var(--accent)" }}>Blog</span>
           </h1>

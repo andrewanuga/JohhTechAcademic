@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, BookOpen } from "lucide-react";
+import Logo from "@public/john_academic_logo.png";
 
 const links = [
   { label: "Home", href: "/" },
@@ -34,8 +35,8 @@ export default function Navbar() {
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 1.5rem", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-            <div style={{ width: 34, height: 34, background: "var(--accent)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-              <BookOpen size={18} color="#000" strokeWidth={2.5} />
+            <div style={{ width: 34, height: 34, background: "white", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+              <img src={"john_academic_logo_sym.png"} alt="Logo" style={{ width: "70%", height: "70%", objectFit: "cover" }} />
             </div>
             <span style={{ fontFamily: "'Playfair Display',serif", fontWeight: 800, fontSize: "1.1rem", color: "var(--text)" }}>
               Johntech<span style={{ color: "var(--accent)" }}>.</span>

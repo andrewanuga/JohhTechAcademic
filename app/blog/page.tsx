@@ -26,10 +26,10 @@ export default function BlogPage() {
         <div style={{ position: "relative" }}>
           <Badge style={{ marginBottom: "1.2rem", backgroundColor: "var(--accent2)", padding: "0.5rem 1rem", border: "1px solid var(--accent)", color: "var(--text)" }}>KNOWLEDGE HUB</Badge>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2.2rem,5vw,3.4rem)", fontWeight: 800, marginBottom: ".85rem" }}>
-            The Johntech <span style={{ color: "var(--accent)" }}>Blog</span>
+            Our <span style={{ color: "var(--accent)" }}>Blog</span>
           </h1>
           <p style={{ color: "var(--muted)", maxWidth: 500, margin: "0 auto 2rem", fontSize: "1rem", lineHeight: 1.72 }}>
-            Study tips, JAMB strategies, exam guides and science education — everything you need to succeed.
+            Join our academy for assured exam success, study strategies and educational consultations all delivered to you.
           </p>
           {/* Category pills */}
           <div style={{ display: "flex", gap: ".6rem", flexWrap: "wrap", justifyContent: "center" }}>

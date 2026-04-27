@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { BookOpen, Globe, Send, Rss, Share } from "lucide-react";
+import { BookOpen, Mail, Send, Camera, Play } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -23,8 +23,8 @@ export default function Footer() {
             </p>
             <div style={{ display: "flex", gap: ".6rem" }}>
               {[
-                { Icon: Globe, href: "#" }, { Icon: Send, href: "#" },
-                { Icon: Rss, href: "#" }, { Icon: Share, href: "#" },
+                { Icon: Mail, href: "mailto:johntechacademy1@gmail.com" }, { Icon: Send, href: "https://wa.me/2348163977597?text=Hello%2C%20I%E2%80%99m%20interested%20in%20Johntech%20Academy.%0A%0AMy%20Name%3A%20______" },
+                { Icon: Camera, href: "https://www.instagram.com/johntechacademy1/ (IG)" }, { Icon: Play, href: "https://www.youtube.com/@Johntechacademy1" },
               ].map(({ Icon, href }, i) => (
                 <a key={i} href={href}
                   style={{ width: 32, height: 32, border: "1px solid var(--border)", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--muted)", textDecoration: "none", transition: "all .2s" }}

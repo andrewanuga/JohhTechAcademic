@@ -140,7 +140,7 @@ export default function RegisterPage() {
                         <option>SS1</option>
                         <option>SS2</option>
                         <option>SS3 / WAEC Candidate</option>
-                        <option>JAMB Repeater</option>
+                        <option>JAMB Candidate</option>
                         <option>University Student</option>
                       </select>
                     </div>
